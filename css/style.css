@@ -1,3 +1,13 @@
+/* VARIABLES */
+:root{
+    /* Colors */
+    --blue-color:#2d9acc;
+    --white-color: white;
+    --black-color: black;
+
+    /* Shadow */
+    --shadow:0 0 2px #c1bcbc;
+}
 /* GENERAL */
 *{
     box-sizing: border-box;
@@ -8,11 +18,14 @@ html{
     font-size: 62.5%;
     font-family: Helvetica, sans-serif;
 }
+p{
+    font-size: 1.2rem;
+}
 /* HEADER */
 nav{
     display: flex;
-    background-color: #7ACC2D;
-    padding: 10px;
+    background-color: var(--blue-color);
+    padding: 15px;
     font-size: 1.2rem;
     justify-content: space-between;
     align-items: center;
@@ -25,29 +38,95 @@ nav li{
     padding-left: 20px;
 }
 nav li a{
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
 }
 nav li a:hover{
-    color: white;
+    color: var(--white-color);
 }
 /* MAIN */
 .main_section{
-    padding: 20%;
+    padding: 15%;
     text-align: center;
 }
+/* PRODUCTS */
 .products{
     display: flex;
     background-image: url(../images/curve.png);
     background-size: cover;
     background-position: center top;
-    height: 200px;
-    padding: 15%;
+    height: 80px;
+    padding: 20%;
+    justify-content: center;
 }
 .product{
     padding: 10px;
+    margin-top: -280px;
 }
 .product .content{
-    background-color: white;
-    padding: 20px;
+    background-color: var(--white-color);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+}
+.content p,h1{
+    padding: 5px;
+}
+.img_content{
+    text-align: center;
+}
+.img_content img{
+    height: 180px;
+}
+.main_button{
+    background-color: var(--blue-color);
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.7rem;
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+}
+.main_button:hover{
+    background-color: #3085ac;
+    cursor: pointer;
+}
+/* CARACTERISTICAS */
+.property_section{
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.property_section img{
+    height: 100px;
+}
+/* MENCIONES */
+.mention{
+    text-align: center;
+    padding-top: 25px;
+}
+.people_content{
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+}
+.people_content .people{
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    max-width: 239px;
+}
+.people h3,p{
+    padding: 5px;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #313337;
+    color: var(--white-color);
 }
