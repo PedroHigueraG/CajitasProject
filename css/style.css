@@ -55,8 +55,7 @@ nav li a:hover{
     background-image: url(../images/curve.png);
     background-size: cover;
     background-position: center top;
-    height: 80px;
-    padding: 20%;
+    padding: 10%;
     justify-content: center;
 }
 .product{
