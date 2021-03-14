@@ -37,11 +37,11 @@ nav ul{
 nav li{
     padding-left: 20px;
 }
-nav li a{
+nav a{
     color: var(--black-color);
     text-decoration: none;
 }
-nav li a:hover{
+nav a:hover{
     color: var(--white-color);
 }
 /* MAIN */

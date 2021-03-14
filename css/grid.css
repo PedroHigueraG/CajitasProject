@@ -1,46 +1,39 @@
-/* Variables */
-:root{
-    --max-width: calc(100%/12);
-}
 .container{
-    max-width: 900px;
+    display: grid;
+    min-height: 90vh;
+    padding: 5%;
+    grid-template-areas:  "title title title"
+                          "image1 desc1 desc1"
+                          "desc2 desc2 image2"
+                          "image3 desc3 desc3";
+    justify-content: center;
+    align-items: center;
 }
-.row{
-    display: flex;
+.title{
+    grid-area: title;
 }
-.col-1{
-    width: var(--max-width);
+.container img{
+    height: 200px; 
 }
-.col-2{
-    width: calc(var(--max-width)*2);
+.desc{
+    max-width: 750px;
+    padding: 20px;
 }
-.col-3{
-    width: calc(var(--max-width)*3);
+.img1{
+    grid-area: image1;
 }
-.col-4{
-    width: calc(var(--max-width)*4);
+.img2{
+    grid-area: image2;
 }
-.col-5{
-    width: calc(var(--max-width)*5);
+.img3{
+    grid-area: image3;
 }
-.col-6{
-    width: calc(var(--max-width)*6);
+.desc1{
+    grid-area: desc1;
 }
-.col-7{
-    width: calc(var(--max-width)*7);
+.desc2{
+    grid-area: desc2;
 }
-.col-8{
-    width: calc(var(--max-width)*8);
-}
-.col-9{
-    width: calc(var(--max-width)*9);
-}
-.col-10{
-    width: calc(var(--max-width)*10);
-}
-.col-11{
-    width: calc(var(--max-width)*11);
-}
-.col-12{
-    width: calc(var(--max-width)*12);
+.desc3{
+    grid-area: desc3;
 }
