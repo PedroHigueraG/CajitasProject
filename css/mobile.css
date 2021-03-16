@@ -21,6 +21,12 @@
     display: flex;
     flex-direction: column;
     }
+    .sold_container{
+        flex-direction: column;
+    }
+    .imgModule img{
+        height: 180px;
+        }
 }
 @media(min-width:601px) and (max-width:1000px){
     .products{
@@ -35,4 +41,8 @@
         align-items: center;
         padding: 2%;
     }
+    
+    .imgModule img{
+        height: 220px;
+        }
 }

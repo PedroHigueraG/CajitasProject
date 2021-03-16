@@ -58,6 +58,9 @@ nav a:hover{
     padding: 10%;
     justify-content: center;
 }
+.products a{
+    text-decoration: none;
+}
 .product{
     padding: 10px;
     margin-top: -280px;
@@ -86,6 +89,7 @@ nav a:hover{
     color: var(--white-color);
     border: none;
     border-radius: 5px;
+    text-align: center;
 }
 .main_button:hover{
     background-color: #3085ac;
@@ -120,6 +124,51 @@ nav a:hover{
 }
 .people h3,p{
     padding: 5px;
+}
+/* COMPRA */
+.sold_container{
+    padding: 10%;
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.soldModule{
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.soldModule form{
+    display: flex;
+    flex-direction: column;
+}
+.soldModule label{
+    margin: 5px;
+    font-size: 1.2rem;
+}
+.soldModule input{
+    padding: 5px;
+    margin: 5px;
+}
+.button{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+}
+.imgModule{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.imgModule img{
+height: 350px;
+}
+.fr1{
+    width: 40%;
+}
+.fr2{
+    width: 70%;
 }
 /* FOOTER */
 footer{
